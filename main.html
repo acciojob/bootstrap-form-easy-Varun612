@@ -4,13 +4,83 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<h1 class="text-center ">Internship Form</h1>
+	<form class="needs-validation" noValidate>
+		<div class="row">
+			<div class="form-group col-sm-4">
+				<label for="first-name-input">First Name</label>
+			    <input required type="text" class="form-control" id="first-name-input" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+				 <div class="invalid-feedback">
+				     First name required!
+			      </div>			
+			</div>
+			<div class="form-group col-sm-4">
+			    <label for="last-name-input">Last Name</label>
+			    <input required type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name">
+				<div class="invalid-feedback">
+				     Last name required!
+			    </div>			
+			</div>
+			<div class="form-group col-sm-4">
+				<label for="email-input">Email Address</label>
+			    <input required type="email" class="form-control" id="email-input" aria-describedby="email" placeholder="Enter email">
+				<div class="invalid-feedback">
+				    Email required!
+			    </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-sm-6">
+				<label for="college">College</label>
+			    <input required type="text" class="form-control" id="college" aria-describedby="collegeName" placeholder="Enter College Name">
+				<div class="invalid-feedback">
+				    Please provide a valid college.
+			    </div>
+			</div>
+			<div class="form-group col-sm-3">
+			    <label for="graduation-year-input">Graduation Year</label>
+			   <select required id="graduation-year-input" class="form-control">
+				   <option selected>Choose..</option>
+			        <option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2021</option>
+			    </select>
+				<div class="invalid-feedback">
+				    Please select a valid Graduation Year.
+			    </div>
+			</div>
+			<div class="form-group col-sm-3">
+				<label for="roll-no-input">Roll Number</label>
+			    <input required type="number" class="form-control" id="roll-no-input" aria-describedby="rollNumber" placeholder="Enter roll number">
+				<div class="invalid-feedback">
+				    Please provide a valid Roll no.
+			    </div>
+			</div>
+		</div>
+		<div class="form-group">
+		    <div class="form-check">
+			    <input required class="form-check-input" type="checkbox" id="conditions-checkbox">
+				<label class="form-check-label" for="conditions-checkbox">
+			        Agree to terms and conditions
+			    </label>
+				<div class="invalid-feedback">
+				    You must agree before submitting.
+			    </div>
+		    </div>
+	  </div>
+  <button type="submit" class="btn btn-primary">Submit Form</button>
+
+		
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-WZ+eOtdaj5N93zJ1E3Uyh2++FSeYeNrbPoAgGbUotWsKTxEp+N9m5Y+ZgGqQnrKw"
+    crossorigin="anonymous"
+  ></script>
 </body>
 
 </html>
